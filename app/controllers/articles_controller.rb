@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
       # title: params[:article][:title],
       # body:  params[:article][:body])
       @article.save
-      flash.notice = 'Article #{@article.title} Created!'
+      flash.notice = "Article '#{@article.title}' Created!"
       redirect_to article_path(@article)
   end
 
